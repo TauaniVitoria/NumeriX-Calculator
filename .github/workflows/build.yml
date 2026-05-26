@@ -46,5 +46,8 @@ jobs:
         with:
           name: numerix-calculator-${{ matrix.platform }}
           path: |
-            ${{ join(fromJSON(steps.tauri.outputs.artifactPaths), '\n') }}
+            src-tauri/target/**/bundle/msi/*.msi
+            src-tauri/target/**/bundle/nsis/*.exe
+            src-tauri/target/**/bundle/dmg/*.dmg
+            src-tauri/target/**/bundle/macos/Numerix Calculator.app
           if-no-files-found: error
