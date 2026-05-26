@@ -49,5 +49,5 @@ jobs:
             src-tauri/target/**/bundle/msi/*.msi
             src-tauri/target/**/bundle/nsis/*.exe
             src-tauri/target/**/bundle/dmg/*.dmg
-            src-tauri/target/**/bundle/macos/Numerix Calculator.app
+            src-tauri/target/**/bundle/macos/*.app
           if-no-files-found: error

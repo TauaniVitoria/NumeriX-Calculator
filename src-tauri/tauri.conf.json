@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Numerix Calculator",
-  "version": "0.1.0",
-  "identifier": "com.numerix.calculator",
+  "productName": "CalculadoraMetodos",
+  "version": "1.0.0",
+  "identifier": "com.tauani.calculadora",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:8080",
@@ -13,7 +13,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "Numerix Calculator",
+        "title": "CalculadoraMetodos",
         "width": 1000,
         "height": 700,
         "resizable": true,
@@ -26,11 +26,14 @@
   },
   "bundle": {
     "active": true,
-    "targets": "all",
+    "targets": [
+      "dmg",
+      "msi",
+      "nsis"
+    ],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
-      "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
     ],
